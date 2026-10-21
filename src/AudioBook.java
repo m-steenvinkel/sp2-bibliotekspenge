@@ -13,6 +13,4 @@ public class AudioBook extends PhysicalTitle implements IAudioBook {
     public int getDurationInMinutes() {
         return durationInMinutes;
     }
-
-
 }

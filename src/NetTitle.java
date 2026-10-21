@@ -10,11 +10,7 @@ public abstract class NetTitle extends Title {
         this.use = use;
     }
 
-    //protected double getPseudoCopies() {}
-
-    private int getUseFactor() {
-        return use;
+    protected double getPseudoCopies() {
+        return (reach * 5) + (availability * 0.5) + use;
     }
-
-
 }

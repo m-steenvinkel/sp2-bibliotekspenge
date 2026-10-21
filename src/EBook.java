@@ -16,6 +16,7 @@ public class EBook extends NetTitle {
         return pages;
     }
 
-
-
+   protected double calculatePoints() {
+        return calculatePages() * super.convertLiteratureType() * super.getPseudoCopies();
+   }
 }

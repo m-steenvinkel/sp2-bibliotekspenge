@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-import static java.lang.Math.round;
-
 public class Author {
     private String name;
     private ArrayList<Title> titles;
@@ -19,14 +17,11 @@ public class Author {
         return name;
     }
 
-
     public double calculateRoyalties() {
         double total = 0;
         for (Title title : titles) {
             total += title.calculateRoyalty();
         }
-        return Math.round(total); //TODO: find anden måde at afrunde
+        return Math.round(total * 100.0) / 100.0;
     }
-
-
 }
